@@ -7,6 +7,15 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
+function name(firstName, lastName, callback){
+  console.log(`My name is ${firstName}, and my surname is ${lastName}`);
+  callback(lastName);
+}
+
+var greeting = function(ln){
+  console.log('Welcome Mr. ' + ln);
+};
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
