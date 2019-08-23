@@ -86,7 +86,7 @@ console.log(universitiesSorted)
 */
 let contactInfo = [];
 graduates.forEach((i) => {
-  contactInfo.push(i.first_name + " " + i.email)
+  contactInfo.push(`${i.first_name} ${i.email}}`)
 });
 
 /*
@@ -111,7 +111,7 @@ universities.forEach((i) =>
   }
 }
 )
-console.log(uni);
+console.log(uni); //List of universities with 'uni' in their name 
 
 
 // ==== ADVANCED Array Methods ====
@@ -158,17 +158,15 @@ The zoos are concenred about animals with a lower population count. Find out whi
 */
 
 
-const lowerPopulation = zooAnimals.filter( (population) => {
-  return population.population <5;
+const lowerPopulation = zooAnimals.filter( (animal) => {
+  return animal.population <5;
 })
 console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
-
 */
-
 
 let populationTotal = 0;
 populationTotal = zooAnimals.reduce((accumulator, currentValue) => {
